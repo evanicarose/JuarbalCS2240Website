@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" rel="stylesheet">
+    <title>Applications Development- Juarbal</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="navbar">
+                <img src="logo_bg.png" class="logo">
+                <ul class="menu_links">
+                    <span id="close-btn" class="material-symbols-outlined">close</span>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#types">Beans</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                </ul>
+                <span id="menu-btn" class="material-symbols-outlined">menu</span>
+            </div>
+    
+            <div class="content">
+                <a href="#home"></a>
+                <h1>MEOW BEANS</h1>
+                <p>Welcome to Meow Beans, where we explore 
+                the fascinating history of coffee beans!</p>
+            </div>
+    
+        </div>
+
+    </header>
+
+
+    <script>
+        const header = document.querySelector("header");
+        const menubtn = document.querySelector("#menu-btn");
+        const closebtn = document.querySelector("#close-btn");
+
+        menubtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        })
+
+        closebtn.addEventListener("click", () => {
+            menubtn.click();
+        })
+    </script>
+
+    <div class="timeline" >
+        <section class="historyContainerL" id="history">
+            <div class="history-img">
+                <img src="history1.png" alt="">
+            </div>
+            <div class="history-text">
+                <a href="#History"></a>
+                <h2>
+                    Harnessing the Bean: A Journey Through <br>
+                    the Rich History of Coffee
+                </h2>
+                  <p>
+                    The Ethiopian legend of coffee's origins centers around a goat herder named Kaldi, who discovered the energizing 
+                    effects of coffee berries when his goats became lively after consuming them.
+                  </p>
+                  <p>He shared his findings with monks, who initially dismissed the berries as the work of the
+                    devil but later embraced them when they experienced the stimulating effects. However,
+                    while this tale is widely known, the true history of coffee likely originates with the Oromo/Galla people.</p>
+                  <p>Nevertheless, coffee's heritage can be traced back to ancient Ethiopian forests, where its cultivation began centuries ago. From there, coffee spread across the globe, starting its 
+                    journey in the Arabian peninsula and eventually becoming a beloved beverage worldwide.</p>
+            </div>
+        </section>
+    
+        <section class="historyContainerR" id="history2">
+            <div class="history-text2">
+                <h2>
+                    The Rich Heritage of Arabian Coffee
+                </h2>
+                <p>
+                    The Arabian Peninsula holds a significant place in the history of coffee, with its cultivation and trade beginning there. 
+                    
+                </p>
+                <p>By the 15th century, coffee was being grown in Yemen and by the 16th century, it had spread to other regions like Persia, Egypt, Syria, and Turkey. </p>
+                <p>Coffee houses, known as qahveh khaneh, became bustling hubs of social activity, where people gathered not only to enjoy coffee but also to engage in conversation, music, games, and news updates. </p>
+                <p>The popularity of these establishments earned them the nickname "Schools of the Wise."</p>
+                <p>The spread of coffee to Europe brought about mixed reactions. Some viewed it with suspicion, even going as far as calling it the "bitter invention of Satan."</p>
+                
+            </div>
+            <div class="history-img2">
+                <img src="history2.png" alt="">
+            </div>
+        </section>
+        
+        <section class="historyContainerL" id="history">
+            <div class="history-text3">
+                <p>However, Pope Clement VIII's endorsement after tasting the beverage himself helped alleviate concerns and contributed to its acceptance.</p>
+                <p>In Europe, coffee houses quickly became integral parts of social life, offering stimulating conversations and earning the nickname "penny universities" in England.</p>
+                <p>The impact of coffee extended beyond social realms; it also influenced daily habits, replacing traditional breakfast drinks like beer and wine.</p>
+                <p>This shift led to increased alertness and productivity among those who adopted coffee as their morning beverage.</p>
+                <p>The proliferation of coffee houses in major European cities fostered communities of like-minded individuals, giving rise to new businesses like Lloyd's of London, which originated from Edward Lloyd's Coffee House.</p>
+            </div>
+    
+            <div class="history-img3">
+                <img src="history3.png" alt="">
+            </div>
+            
+        </section>
+
+        <section class="historyContainerR" id="history">
+            <div class="history-text4">
+               
+                <p>While Yemen holds its own legends about the discovery of coffee's energizing properties, it's widely believed that coffee beans were initially exported from Ethiopia to Yemen, where they were cultivated and eventually brought back to Ethiopia. </p>
+                <p>This exchange between Yemen and Ethiopia marks a crucial moment in the global spread of coffee culture.</p>
+                <p>In the centuries-old tale of coffee's journey through time and across continents, its arrival in Europe marked a significant shift in its global narrative.</p>
+                <p>By the 17th century, European travelers returned with tales of this exotic, dark beverage, capturing the intrigue of the continent. Initially met with suspicion, coffee's popularity soared, particularly in Italy, where Venetian merchants played a pivotal role in its dissemination.</p>
+                <p>The opening of Europe's first coffee house in Venice in 1645 heralded a new era of social gathering and indulgence in this newfound luxury.</p>
+            </div>
+            <div class="history-img4">
+                <img src="history4.png" alt="">
+            </div>
+        </section>
+
+        <section class="historyContainerL" id="history">
+            <div class="history-text5">
+                <p>Across the English Channel, coffee found a similar reception, courtesy of the Dutch and British East India Companies. England's first coffee house emerged in Oxford in 1651, quickly followed by London's bustling coffee scene, where men of all walks of life gathered to discuss business and ideas.</p>
+                <p>Paris, too, fell under coffee's spell in 1669, with the opening of the first coffee house by Suleyman Aga, igniting a Parisian love affair with the "petit noir."</p>
+                <p>As coffee's presence flourished in Europe, its journey across the Atlantic heralded a new chapter in its history. Introduced to the New World by Captain John Smith in 1607, coffee initially struggled to find favor among settlers, who preferred tea. </p>
+                <p>However, the tide turned during the Boston Tea Party in 1773, when tea was shunned in favor of coffee, forever altering American drinking preferences.</p>
+                
+            </div>
+
+            <div class="history-img5">
+                <img src="history5.png" alt="">
+            </div>
+        </section>
+
+        
+
+        <section class="historyContainerR" id="history">
+            <div class="history-text6">
+                <p>The allure of the New World's tropical climate proved ideal for coffee cultivation, with plantations spreading rapidly across Central and South America.</p>
+                    <p>Coffee's journey from Latin America to global dominance began with flourishing plantations, expanding to the Caribbean through historical events like King Louis XIV receiving a coffee plant in 1714. </p>
+                    <p>Pioneers like Gabriel de Clieu and Francisco de Mello Palheta played crucial roles in spreading coffee cultivation. As coffee spread, it became a coveted commodity, shaping economies and cultures worldwide. </p>
+                    <p>From European cafes to American plantations, coffee's enduring legacy as a beloved beverage continues to captivate and inspire.</p>
+            </div>
+            <div class="history-img6">
+                <img src="history6.png" alt="">
+            </div>
+        </section>
+    </div>
+
+
+    <section class="video">
+        <video src="coffeevid.mp4" autoplay loop></video>
+    </section>
+    <section class="coffeeBeans" id="types">
+        
+        <div class="heading">
+            <h2>Types of Coffee Beans</h2>
+            
+        </div>
+        <a href="#types"></a>
+        <div class="coffee-container" id="typeContent">
+            
+            <div class="box">
+                <div class="image">
+                    <img src="arabica.png" alt="">
+                </div>
+                <h3>Arabica Coffee Beans</h3>
+                <p> Arabica beans, constituting roughly 60% of global coffee production, have their roots in the highlands of Ethiopia and are possibly the earliest coffee beans consumed. Their name likely stems from their prevalence in 7th-century Arabia(present-day Yemen).</p>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="robusta.png" alt="">
+                </div>
+                <h3>Robusta Coffee Beans</h3>
+                <p>Robusta, the second most common coffee bean, originated in Africa, now primarily cultivated in Africa, Indonesia, and Vietnam. Often blended for cost-effectiveness, Robusta beans are larger and grown on taller plants, thriving at lower altitudes. Robusta's affordability makes it a popular choice for roasters.</p>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="liberica.png" alt="">
+                </div>
+                <h3>Liberica Coffee Beans</h3>
+                <p>Coffea liberica, originating from central and western Africa, particularly Liberia, is valued for its distinctive floral aroma and bold, smoky taste. Historically overshadowed despite its contributions, Liberica thrived in Southeast Asia after Arabica crops were devastated by coffee rust.</p>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="excelsa.png" alt="">
+                </div>
+                <h3>Excelsa Coffee Beans</h3>
+                <p>Excelsa, once classified as a distinct species, is now recognized as a variant of Liberica. Predominantly found in Southeast Asia, Excelsa beans resemble elongated ovals like Liberica beans. They thrive on tall coffee plants at medium altitudes, typically ranging from 20 to 30 feet in height.</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

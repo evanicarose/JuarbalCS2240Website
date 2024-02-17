@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/icon?family=Poppins: wght@300;400;500;600;700& display+swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0.75, 0.75), rgba(0, 0, 0.75, 0.75)), url(coffe_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+body{
+    background: rgba(71, 39, 8, 0.3);
+}
+
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar .menu_links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+.navbar a:after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+#menu-btn {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#close-btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    header.show-mobile-menu::before {
+        content: " ";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+
+    #close-btn,
+    #menu-btn {
+        display: block;
+    }
+
+    #menu-btn:hover {
+        color: orange;
+    }
+
+    #menu-btn:after {
+        width: 100%;
+    }
+
+    .navbar .menu_links {
+        position: fixed;
+        left: -400px;
+        top: 0;
+        flex-direction: column;
+        width: 260px;
+        height: 100vh;
+        background: white;
+        padding: 70px 40px 0;
+        transition: left 0.15s ease;
+    }
+
+    header.show-mobile-menu .navbar .menu_links {
+        left: 0;
+    }
+
+    .navbar a {
+        color: black;
+    }
+
+    #close-btn:hover {
+        color: orange;
+    }
+
+    #close-btn:after {
+        width: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content:is(h1, p) {
+        max-width: 100%;
+    }
+
+    .content h1 {
+        font-size: 3.2rem;
+        line-height: 60px;
+    }
+
+    .content p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+
+.historyContainerL{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.historyContainerR{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.history-img,
+.history-img2,
+.history-img3,
+.history-img4,
+.history-img5,
+.history-img6 {
+    border-radius: 89px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 500px;
+    margin-bottom: 20px;
+}
+
+.history-text,
+.history-text2,
+.history-text3,
+.history-text4,
+.history-text5,
+.history-text6 {
+    padding: 10px 10px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    background: white;
+    border-radius: 6px;
+    font-size: 12px;
+    text-align: left;
+    order: 1;
+}
+
+
+.history-text h2,
+.history-text2 h2,
+.history-text3 h2,
+.history-text4 h2,
+.history-text5 h2
+.history-text6 h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.history-text p,
+.history-text2 p,
+.history-text3 p,
+.history-text4 p,
+.history-text5 p,
+.history-text6 p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.1rem;
+}
+
+@media screen and (max-width: 320px) {
+    .historyContainer,
+    .historyContainer2,
+    .historyContainer3,
+    .historyContainer4,
+    .historyContainer5,
+    .historyContainer6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .history-img,
+    .history-img2,
+    .history-img3,
+    .history-img4,
+    .history-img5,
+    .history-img6 {
+        order: 1; /* Display the image before the text */
+        margin-top: 10px; /* Adjust margin as needed */
+        max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Adjust the width as needed */
+    }
+
+    .history-img img,
+    .history-img2 img,
+    .history-img3 img,
+    .history-img4 img,
+    .history-img5 img,
+    .history-img6 img {
+        max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .history-text,
+    .history-text2,
+    .history-text3,
+    .history-text4,
+    .history-text5,
+    .history-text6 {
+        order: 2; /* Display the text after the image */
+        margin-bottom: 10px; /* Adjust margin as needed */
+        margin-left: 20px; /* Adjust margin as needed */
+        margin-right: 20px; /* Adjust margin as needed */
+        text-align: left; /* Align text to the left */
+    }
+
+    .history-img,
+    .history-img2,
+    .history-img3,
+    .history-img4,
+    .history-img5,
+    .history-img6 {
+        margin-top: 20px;
+        margin-left: 0; /* Set left margin to 0 */
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .historyContainer,
+    .historyContainer2,
+    .historyContainer3,
+    .historyContainer4,
+    .historyContainer5,
+    .historyContainer6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .history-img,
+    .history-img2,
+    .history-img3,
+    .history-img4,
+    .history-img5,
+    .history-img6 {
+        order: 1; /* Display the image before the text */
+        margin-top: 10px; /* Adjust margin as needed */
+        max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Adjust the width as needed */
+    }
+
+    .history-img img,
+    .history-img2 img,
+    .history-img3 img,
+    .history-img4 img,
+    .history-img5 img,
+    .history-img6 img {
+        max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .history-text,
+    .history-text2,
+    .history-text3,
+    .history-text4,
+    .history-text5,
+    .history-text6 {
+        order: 2; /* Display the text after the image */
+        margin-bottom: 10px; /* Adjust margin as needed */
+        margin-left: 20px; /* Adjust margin as needed */
+        margin-right: 20px; /* Adjust margin as needed */
+        text-align: left; /* Align text to the left */
+    }
+
+    .history-img,
+    .history-img2,
+    .history-img3,
+    .history-img4,
+    .history-img5,
+    .history-img6 {
+        margin-top: 20px;
+        margin-left: 0; /* Set left margin to 0 */
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .historyContainer,
+    .historyContainer2,
+    .historyContainer3,
+    .historyContainer4,
+    .historyContainer5,
+    .historyContainer6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .history-img,
+    .history-img2,
+    .history-img3,
+    .history-img4,
+    .history-img5,
+    .history-img6 {
+        order: 1; /* Display the image before the text */
+        margin-top: 10px; /* Adjust margin as needed */
+        max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Adjust the width as needed */
+    }
+
+    .history-img img,
+    .history-img2 img,
+    .history-img3 img,
+    .history-img4 img,
+    .history-img5 img,
+    .history-img6 img {
+        max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .history-text,
+    .history-text2,
+    .history-text3,
+    .history-text4,
+    .history-text5,
+    .history-text6 {
+        order: 2; /* Display the text after the image */
+        margin-bottom: 10px; /* Adjust margin as needed */
+        margin-left: 20px; /* Adjust margin as needed */
+        margin-right: 20px; /* Adjust margin as needed */
+        text-align: left; /* Align text to the left */
+    }
+
+    .history-img,
+    .history-img2,
+    .history-img3,
+    .history-img4,
+    .history-img5,
+    .history-img6 {
+        margin-top: 20px;
+        margin-left: 0; /* Set left margin to 0 */
+        margin-right: 0;
+    }
+}
+
+.heading{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.heading h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar{
+    height: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+
+}
+::-webkit-scrollbar-thumb{
+    background: #4D3838;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#926868;
+    border-radius: 25px;
+}
+
+.coffee-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 30px;
+    padding: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-container .box {
+    flex: 0 0 auto;
+    width: calc(40vw - 80px);
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-container .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    padding: 8px;
+    background: rgb(101, 67, 33);
+    border-radius: 50%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.box h2{
+    margin-top: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.box{
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+.reference1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.reference1 p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.1rem;
+    text-align: left;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-right: 20px;
+    
+}
+
+.video {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 1000px; /* Set a maximum width if desired */
+    margin: 0 auto; /* Center the video horizontally */
+    margin-top: 50px;
+}
+
+.video video {
+    width: 100%; /* Make the video fill its container */
+    display: block; /* Ensure it behaves as a block element */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+
+
